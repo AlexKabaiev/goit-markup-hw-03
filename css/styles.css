@@ -64,12 +64,12 @@ body {
   color: var(--color-accent);
 }
 
-/* Стилизация первой секции */
-.first-section {
+/* Стилизация главной секции */
+.hero {
   background-color: var(--color-background);
 }
 /*Стилизация основного заголовка */
-.main-title {
+.hero-title {
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -80,7 +80,7 @@ body {
 }
 
 /* Стилизация кнопки заказа услуги */
-.main-button {
+.hero-button {
   font-family: 'Roboto';
   font-weight: 700;
   font-size: 16px;
@@ -95,8 +95,8 @@ body {
   cursor: pointer;
 }
 
-.main-button:hover,
-.main-button:focus {
+.hero-button:hover,
+.hero-button:focus {
   background-color: rgba(33, 150, 243, 0.6);
 }
 
@@ -183,7 +183,7 @@ body {
   background-color: var(--color-accent);
 }
 /* Стилизация подвала */
-.footer {
+.page-footer {
   background-color: var(--color-background);
 }
 /* Стилизация контактов в подвале */
