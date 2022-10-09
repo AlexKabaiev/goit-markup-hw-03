@@ -32,7 +32,7 @@ ul {
   width: 1200px;
   padding: 0px 15px;
   margin: 0 auto;
-  outline: 2px solid red;
+  /* outline: 2px solid red; */
 }
 
 /* Header */
@@ -235,6 +235,9 @@ ul {
   display: flex;
   justify-content: space-between;
   list-style-type: none;
+}
+
+.team-item {
   background: var(--color-white);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -265,11 +268,23 @@ ul {
 }
 
 /* Стилизация кнопок на странице Портфолио */
-.projects-menu {
+.menu {
+  padding: 94px 0;
+}
+
+.list-button {
+  display: flex;
+  justify-content: center;
   list-style-type: none;
+  margin-bottom: 34px;
+}
+
+.list-button > .menu-item:not(:last-child) {
+  margin-right: 8px;
 }
 
 .menu-button {
+  height: 38px;
   font-family: 'Roboto';
   font-weight: 500;
   font-size: 16px;
@@ -279,6 +294,7 @@ ul {
   color: var(--color-brand);
   background-color: #f5f4fa;
   border: 0;
+  border-radius: 4px;
   cursor: pointer;
 }
 
@@ -287,6 +303,42 @@ ul {
   color: var(--color-white);
   background-color: var(--color-accent);
 }
+
+/* Стизизация основной секции страницы портфолио */
+.projects-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px 30px;
+  list-style-type: none;
+}
+
+.projects-item {
+  width: 370px;
+  background: var(--color-white);
+  border: 1px solid #eeeeee;
+}
+
+.projects-img {
+  margin-bottom: 20px;
+}
+
+.projects-title {
+  padding: 0 24px;
+  margin-bottom: 4px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: var(--color-brand);
+}
+
+.projects-text {
+  padding: 0 24px 20px 24px;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.03em;
+}
+
 /* Стилизация подвала */
 .page-footer {
   background-color: var(--color-background);
@@ -339,23 +391,4 @@ ul {
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
   text-decoration: none;
-}
-
-/* Стизизация основной секции страницы портфолио */
-.projects-list {
-  list-style-type: none;
-}
-
-.projects-title {
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 2;
-  letter-spacing: 0.06em;
-  color: var(--color-brand);
-}
-
-.projects-text {
-  font-size: 16px;
-  line-height: 1.875;
-  letter-spacing: 0.03em;
 }
