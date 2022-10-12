@@ -4,7 +4,9 @@
   --color-accent: #2196f3;
   --color-button: #f5f4fa;
   --color-white: #ffffff;
-  --color-background: #2f303a;
+  --color-background-hero: #c4c4c4;
+  --color-background-footer: #2f303a;
+  --overlay: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4));
 }
 
 /* Общие настройки стиля */
@@ -78,8 +80,7 @@ section {
   width: 281px;
 }
 
-.nav-items {
-}
+.nav-items {}
 
 .header-contacts {
   display: flex;
@@ -105,6 +106,7 @@ section {
 .pages-nav .link:focus {
   color: var(--color-accent);
 }
+
 /* Стилизация контактов в шапке */
 .mail-head,
 .tel-head {
@@ -125,10 +127,14 @@ section {
 
 /* Стилизация главной секции */
 .hero {
-  background-color: var(--color-background);
   text-align: center;
   padding: 200px 0;
+  background-color: var(--color-background-hero);
+  background-image: var(--overlay), url('../images/header-img.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
 }
+
 /*Стилизация основного заголовка */
 .hero-title {
   width: 696px;
@@ -168,7 +174,25 @@ section {
 }
 
 /* Стилизация секции особенности */
-.features {
+.features {}
+
+.features-icons-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  padding-bottom: 30px;
+}
+
+.features-icons-item {}
+
+.features-icons-link {
+  width: 270px;
+    height: 120px;
+    display: block;
+    border: 1px solid #999999;
+    border-radius: 4px;
+    
 }
 
 .features-list {
@@ -200,6 +224,7 @@ section {
   letter-spacing: 0.03em;
   color: var(--color-primary);
 }
+
 /* Стилизация секции нашей работы */
 .work {
   padding-top: 0;
@@ -255,8 +280,7 @@ section {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-img {
-}
+.team-img {}
 
 .name-card {
   padding-top: 30px;
@@ -281,6 +305,26 @@ section {
   text-align: center;
 }
 
+.social-icons {}
+
+.social-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  padding-bottom: 30px;
+}
+
+.social-item {}
+
+.social-link {
+  width: 44px;
+  height: 44px;
+  display: block;
+  background-color: tomato;
+  border-radius: 50%;
+}
+
 /* Стилизация кнопок на странице Портфолио */
 .menu {
   padding: 94px 0;
@@ -293,7 +337,7 @@ section {
   margin-bottom: 50px;
 }
 
-.list-button > .menu-item:not(:last-child) {
+.list-button>.menu-item:not(:last-child) {
   margin-right: 8px;
 }
 
@@ -332,8 +376,7 @@ section {
   background: var(--color-white);
 }
 
-.projects-img {
-}
+.projects-img {}
 
 .projects-name {
   padding: 20px 24px;
@@ -359,7 +402,7 @@ section {
 
 /* Стилизация подвала */
 .page-footer {
-  background-color: var(--color-background);
+  background-color: var(--color-background-footer);
   padding-top: 60px;
   padding-bottom: 60px;
 }
@@ -379,6 +422,7 @@ section {
 .logo-footer-span {
   color: var(--color-white);
 }
+
 /* Стилизация контактов в подвале */
 .footer-address {
   font-style: normal;
@@ -387,7 +431,8 @@ section {
 .footer-contacs {
   list-style-type: none;
 }
-.footer-contacs > .footer-item:not(:last-child) {
+
+.footer-contacs>.footer-item:not(:last-child) {
   margin-bottom: 9px;
 }
 
